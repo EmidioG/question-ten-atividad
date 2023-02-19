@@ -1,0 +1,76 @@
+body {
+    background-color: azure;
+    font-family: MontSerrat;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+h2,
+p {
+    margin: 0px;
+}
+
+/* organizando grid */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem 2.5rem;
+    max-width: auto;
+    margin: 1rem 40px;
+}
+
+.galeria-titulo {
+    font-size: 2rem;
+    grid-column: 1/-1;
+}
+
+/* container da imagem */
+
+.container-imagem {
+    transition: 0.3s;
+    display: grid;
+    gap: 1rem;
+    max-width: 300px;
+    background-color: darkslateblue;
+    border-radius: 4px;
+    padding: 1rem;
+    color: white;
+}
+
+/* rodape */
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    padding: 2rem 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.rodape:hover {
+    transition: 0.3s;
+    background-color: wheat;
+    color: black;
+}
+
+.rodape h1 {
+    margin: 0px;
+    padding: 0 1rem;
+}
+
+.active {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: calc(50vh - 192.5px);
+    left: calc(50vw - 162px);
+    transform: scale(1.2);
+}
